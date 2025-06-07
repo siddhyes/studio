@@ -1,3 +1,4 @@
+
 // src/components/room-card.tsx
 import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -30,12 +31,13 @@ export default function RoomCard({
 }: RoomCardProps) {
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-      <div className="relative w-full h-60">
+      <div className="relative w-full h-60 overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
-          layout="fill"
-          objectFit="cover"
+          width={600}
+          height={400}
+          className="w-full h-full object-cover"
           data-ai-hint={imageHint}
         />
       </div>
