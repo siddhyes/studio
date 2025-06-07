@@ -2,9 +2,11 @@
 import RoomCard from '@/components/room-card';
 import { Wifi, Tv2, ThermometerSun, Coffee, GlassWater, Home, Bath, LayoutPanelLeft } from 'lucide-react';
 
+const newImageSrc = "https://storage.googleapis.com/gweb-aip-visual-integ.appspot.com/experiments/SIMPLE_UPLOAD_DEMO/mahara-14451e63-3909-4b88-96cf-1b56b0a3f904.jpeg";
+
 const roomsData = [
   {
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: newImageSrc,
     imageAlt: 'Comfortable single room',
     imageHint: 'modern bedroom',
     roomType: 'Single Room',
@@ -17,7 +19,7 @@ const roomsData = [
     pricePerNight: 3500,
   },
   {
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: newImageSrc,
     imageAlt: 'Spacious double room',
     imageHint: 'hotel bedroom',
     roomType: 'Double Room',
@@ -31,7 +33,7 @@ const roomsData = [
     pricePerNight: 5000,
   },
   {
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: newImageSrc,
     imageAlt: 'Luxurious deluxe room',
     imageHint: 'luxury bedroom',
     roomType: 'Deluxe Room',
@@ -46,7 +48,7 @@ const roomsData = [
     pricePerNight: 7500,
   },
   {
-    imageSrc: 'https://placehold.co/600x400.png',
+    imageSrc: newImageSrc,
     imageAlt: 'Elegant suite with living area',
     imageHint: 'hotel suite',
     roomType: 'Suite',
