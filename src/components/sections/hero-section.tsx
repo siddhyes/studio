@@ -1,5 +1,4 @@
 "use client";
-// src/components/sections/hero-section.tsx
 import Image from 'next/image';
 import { Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,9 +13,9 @@ export default function HeroSection() {
         layout="fill"
         objectFit="cover"
         quality={80}
-        className="z-0"
+        className="z-30" // Changed from z-0 to z-30
         data-ai-hint="hotel facade"
-        priority // Added priority as it's LCP
+        priority
       />
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 py-16">
