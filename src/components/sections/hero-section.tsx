@@ -9,13 +9,14 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative h-[calc(100vh-5rem)] min-h-[600px] flex items-center justify-center text-center text-white">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="https://storage.googleapis.com/gweb-aip-visual-integ.appspot.com/experiments/SIMPLE_UPLOAD_DEMO/mahara-2a3e2033-7059-4ae8-adca-54eb68628d08.jpeg"
         alt="Maharani Palace luxurious facade"
         layout="fill"
         objectFit="cover"
         quality={80}
         className="z-0"
         data-ai-hint="hotel facade"
+        priority // Added priority as it's LCP
       />
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 py-16">
