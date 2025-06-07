@@ -35,10 +35,10 @@ export default function RoomCard({
         <Image
           src={imageSrc}
           alt={imageAlt}
-          width={600}
-          height={400}
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
           data-ai-hint={imageHint}
+          sizes="(max-width: 767px) 100vw, 50vw"
         />
       </div>
       <CardHeader>
@@ -66,3 +66,4 @@ export default function RoomCard({
     </Card>
   );
 }
+
